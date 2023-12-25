@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./meal.css";
 import { useParams } from "react-router-dom";
 import MealCard from "../../Containers/MealCard/MealCard";
-
+import CategoryCard from "../../Containers/CategoryCard/CategoryCard";
 const Meal = () => {
   const { categoryName } = useParams();
   const [categoryMeals, setCategoryMeals] = useState([]);
@@ -34,7 +34,7 @@ const Meal = () => {
       <h1>Repas de la catégorie {categoryName}</h1>
       <div className="meal-container">
         {categoryMeals.map((meal) => (
-          <MealCard key={meal.idMeal} meal={meal} />
+          <MealCard meal={meal} />
         ))}
       </div>
     </div>

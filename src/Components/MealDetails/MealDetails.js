@@ -8,7 +8,6 @@ import MealCard from "../../Containers/MealCard/MealCard";
 const MealDetails = () => {
   const { mealName } = useParams();
   const [thisMeal, setThisMeal] = useState(null);
-
   
     const fetchMealDetails = async () => {
       try {

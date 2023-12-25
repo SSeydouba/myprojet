@@ -5,6 +5,7 @@ import "./categorycard.css";
 import { Link } from "react-router-dom";
 
 const CategoryCard = ({ category }) => {
+  // Appelle de la category de Home
   const categoryDetails = category || {};
 
   const handleClick = () => {

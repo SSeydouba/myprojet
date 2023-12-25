@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 
 const MealCard = ({meal }) => {
   const mealArr = meal || {};
- 
-
 
   const handleClick = () => {
     // Rediriger vers la page des détails du repas en utilisant le nom du repas
@@ -20,7 +18,8 @@ const MealCard = ({meal }) => {
         <img src={mealArr .strMealThumb || ""} alt={mealArr.strMeal || "Nom du repas non disponible"} />
       </Link>
       <h2>{mealArr.strMeal || "Nom du repas non disponible"}</h2>
-      <p>{mealArr.strInstructions || "Instructions non disponibles"}</p>
+      <p>{mealArr.strArea}</p>
+     <p>{mealArr.strInstructions || "Instructions non disponibles"}</p> 
     </div>
   );
 };
