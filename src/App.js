@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+//App.js
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import Home from './Containers/Home/Home';
+import Meal from './Components/Meal/Meal';
+// import Search from './Containers/Search/Search';
+// import Header from './Components/Header/Header';
+// import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+
+        {/* <Header /> */}
+
+        {/* Utilisez Routes au lieu de Route */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:categoryName" element={<Meal />} />
+          <Route path="/meal/:mealName" element={<Meal />} />
+
+          {/* <Route path="/search" element={<Search />} />*/}
+        </Routes>
+
+        {/* Ajoutez vos composants Header et Footer ici */}
+        {/* <Footer /> */}
+      </div>
+    </Router>
   );
 }
 
