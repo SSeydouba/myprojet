@@ -6,7 +6,9 @@ import MealCard from "../../Containers/MealCard/MealCard";
 const Meal = () => {
   const { categoryName } = useParams();
   const [categoryMeals, setCategoryMeals] = useState([]);
+  
   const [thisMeal, setThisMeal] = useState(null);
+
   useEffect(() => {
     const fetchCategoryMeals = async () => {
       try {
