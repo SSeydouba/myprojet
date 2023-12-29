@@ -1,0 +1,24 @@
+.header-container{
+    /* height: 300px; */
+    border: 2px solid red;
+    position: relative;
+}
+.logo-image{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10px;
+}
+.logos{
+    max-width: 130px; /* Remplacez cette valeur par la largeur maximale souhaitée */
+    height: auto; /* Permet au navigateur de maintenir le ratio hauteur/largeur */
+}
+.line{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+

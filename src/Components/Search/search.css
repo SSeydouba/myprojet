@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-control {
+    background-color: rgb(24, 26, 27);
+    height: 30px;
+    width: 250px;
+    border: 0.5px solid white; /* 1px pour une bordure fine, 'solid' pour le style de la bordure, et 'white' pour la couleur */
+  }
+  
+.btn{
+    background-color: rgb(24, 26, 27);
+    height: 35px;
+    width: 35px;
+    color: white;
+    cursor: pointer; 
+}
