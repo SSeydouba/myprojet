@@ -1,5 +1,5 @@
 .home-container{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;

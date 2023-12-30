@@ -5,6 +5,7 @@
     margin: 0 50px 0 50px;
 }
 span{
-    color: blue;
+    color: rgb(121, 121, 194);
     font-size: medium;
+    font-weight: bold;
 }
