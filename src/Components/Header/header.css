@@ -1,7 +1,6 @@
 .header-container{
-    /* height: 300px; */
     border: 2px solid red;
-    position: relative;
+    margin: 0 50px 0 50px
 }
 .logo-image{
     display: flex;

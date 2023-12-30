@@ -18,7 +18,9 @@ const CategoryCard = ({ category }) => {
             className="images-category"
           />
         </Link>
-        <h3>{categoryDetails.strCategory}</h3>
+      </div>
+      <div className="title">
+        <p>{categoryDetails.strCategory}</p>
       </div>
     </div>
   );

@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./meal.css";
 import { useParams } from "react-router-dom";
 import MealCard from "../../Containers/MealCard/MealCard";
-import CategoryCard from "../../Containers/CategoryCard/CategoryCard";
+
 const Meal = () => {
   const { categoryName } = useParams();
   const [categoryMeals, setCategoryMeals] = useState([]);
   
-  const [thisMeal, setThisMeal] = useState(null);
-
   useEffect(() => {
     const fetchCategoryMeals = async () => {
       try {

@@ -22,8 +22,8 @@ const Search = () => {
         
       );
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+      if (!response) {
+        throw new Error("Cette page n'exite pas");
       }
 
       const data = await response.json();
@@ -65,7 +65,7 @@ const Search = () => {
       {searchterm && (
         <div className="meal-list">
           {searchResults.map((item) => (
-            <SearchMealCard key={item.idMeal} meals={item} />
+            <SearchMealCard  meals={item} />
           ))}
         </div>
       )}

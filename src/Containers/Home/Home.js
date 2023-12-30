@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div>
         <h1>Meal Categories</h1>
-        <div className="home-containair">
+        <div className="home-container">
             {categoriesHome.map((item) => (
             <CategoryCard key={item.idCategory} category={item} />
             ))}

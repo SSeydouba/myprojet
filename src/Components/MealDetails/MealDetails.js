@@ -32,11 +32,20 @@ const MealDetails = () => {
   return (
     <div>
         {thisMeal ? (
-            <div className="movie-content">
+            <div className="mealsdetails-container">
                 <div className="card-title">
                     <h1>{thisMeal.strMeal}</h1>
                 </div>
-                <MealCard key={thisMeal.idMeal} meal={thisMeal} />
+                <div className="meals-details">
+                  <div>
+                    <MealCard  meal={thisMeal} />
+                  </div>
+                  <div>
+                    <p><span>Repas</span>: {thisMeal.strCategory}</p>
+                    <p><span>Origine</span>: {thisMeal.strArea}</p>
+                    <p><span>Description</span>: {thisMeal.strInstructions}</p>
+                  </div>
+                </div>
             </div>
             ) : (
                 <p>Aucun repas trouvé</p>

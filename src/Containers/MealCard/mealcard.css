@@ -1,0 +1,13 @@
+.img-card{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.title{
+    border: 1px solid white;
+    text-align: center;
+    font-size: small;
+    object-fit: contain;
+    width: 200px;
+}
+

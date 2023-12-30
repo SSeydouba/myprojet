@@ -3,18 +3,15 @@ body{
     color: white;
 }
 
-.categorie-img{
-    text-align: center;
-    border: 2px solid red;
+.images-category{
     width: 200px;
     height: 200px;
-    margin: 5px;
+    object-fit:cover;
+   border: 1px solid white;
 }
-.images-categorie{
-    width: 200px;
-    height: 210px;
-    object-fit:contain;
+.title{
+    text-align: center;
 }
-h3{
-    margin-top: -50px;
-}
+
+
+
