@@ -11,8 +11,8 @@ const Nav = () =>{
                 </Link>
             </div>
            
-                <h3>Inscription</h3>
-                <h3>Connexion</h3>
+            <h3>Inscription</h3>
+            <h3>Connexion</h3>
            
         </div>
     )

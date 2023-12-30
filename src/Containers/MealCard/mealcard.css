@@ -5,9 +5,13 @@
 }
 .title{
     border: 1px solid white;
-    text-align: center;
     font-size: small;
     object-fit: contain;
     width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 16, 16);
 }
 
