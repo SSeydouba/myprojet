@@ -1,4 +1,5 @@
 // Header.js
+import React from 'react';
 import './header.css';
 import mealIcon from "../../assets/meal-icon.png";
 import { Link } from 'react-router-dom';
